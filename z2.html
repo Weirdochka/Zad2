@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Задание 2</title>
+                <style>
+
+                </style>
+        </head>
+            <body>
+                <script>
+                    "use strict";
+                    // Задание 1
+                    let R=parseFloat(prompt("Введите значение радиуса",""));
+                    const Pi=3.14;
+                    let S=4 * (Pi * (R**2));
+                    let V=(4 / 3) * (Pi * (R**3));
+
+                    // Задание 2
+                    let x=parseFloat(prompt("Введите значение x",""));
+                    let y=parseFloat(prompt("Введите значение y",""));
+                    let z=parseFloat(prompt("Введите значение z",""));
+                    let b=(Math.log(Math.sqrt(((Math.exp(x-y))+(Math.pow(x,Math.abs(y)))+z))));
+
+                    document.write("<b>Задача 1</b><br>")
+
+                    const img = document.createElement("img");
+                    img.src = "z1_1.jpg";
+                    document.body.appendChild(img);
+                    
+                    document.write("<br><b>Площадь ",S,'<br>');
+                    document.write("Объем: " ,V,'</b><br>');
+                    
+
+                    document.write("<b><br>Задача 2</b><br>")
+
+                    const img1 = document.createElement("img");
+                    img1.src = "z2_2.jpg";
+                    document.body.appendChild(img1);
+                    
+                    document.write("<br><b>b= ",b,"</b>");
+
+
+                    document.write("<br><br>Хазиахметов Дамир 0216")
+                </script>
+            </body>
+    </html>
