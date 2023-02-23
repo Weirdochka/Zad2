@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Хазиахметов</title>
+<style>
+.t {
+    width: 225px;	height: 400px; /* Размеры */
+    /*background: #fc0; /* Цвет фона */
+    outline: 2px solid #000; /* Чёрная рамка */
+    /*border: 3px solid #fff; /* Белая рамка */
+    /*border-radius: 10px; /* Радиус скругления */
+}
+</style>
+</head>
+<body>
+    <div class="t">
+<script>
+    
+"use strict";
+const n= parseInt(prompt("Введите значение даты", ""));
+const number=0;
+const summ=parseFloat(prompt("Введите цену первого товара", ""));
+const summ2=parseFloat(prompt("Введите цену второго товара", ""));
+const procent=parseFloat(prompt("Введите скидку", ""));
+let osumm=summ+summ2;
+let skidka=(osumm/100)*procent;
+let itog=osumm-skidka;
+
+
+document.write('ООО "Евроторг" ');
+document.write('<p style="text-align:top;font-size:19px;margin-left:10px;margin-top:0;margin-bottom:0;"><b>СПАСИБО ЗА ПОКУПКУ!</b></p>');
+document.write('<p style="text-align:top;margin-top:0;">Дата покупки:',n);
+
+document.write('<p style="text-align:top;margin-top:0;margin-bottom:0;">Наименование товара</p>');
+document.write(number,"  =",summ);//надо больше пробелов
+
+document.write('<p style="text-align:top;margin-top:0;margi-bottom:0;">Наименование товара</p>');
+document.write(number+1,"  =",summ2);//надо больше пробелов
+
+document.write('<p style="text-align:top;font-size:19px;margin-left:0px;margin-top:10;margin-bottom:0;"><b>ИТОГО</b></p>');
+    
+document.write('<p style="text-align:top;font-size:19px;margin-left:20px;margin-top:0;margin-bottom:0;"><b>',osumm," Грошей");
+   
+document.write('</b><p style="text-align:top;margin-top:0;">Ваша скидка: ',procent,"%");
+
+document.write('<p style="text-align:top;margin-top:0;margin-left:20px">',skidka," Грошей");
+
+document.write('<p style="text-align:top;font-size:19px;margin-left:0px;margin-top:10;margin-bottom:0;"><b>СУММА СО СКИДКОЙ</b></p>');
+
+document.write('<p style="text-align:top;font-size:19px;margin-left:20px;margin-top:0;margin-bottom:0;"><b>',itog," Грошей");
+    
+    
+</script>
+    </div>
+</body>
+</html>
